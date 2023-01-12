@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Login_and_Registration_ui</string>
+    <string name="become_a_member">Become a member</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
 </resources>
