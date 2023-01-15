@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_margin_large">64dp</dimen>
+    <dimen name="activity_margin_small">16dp</dimen>
+    <dimen name="activity_input_margin">32dp</dimen>
+    <dimen name="input_stroke_width">0.5dp</dimen>
+    <dimen name="input_corner_radius">10dp</dimen>
+</resources>
