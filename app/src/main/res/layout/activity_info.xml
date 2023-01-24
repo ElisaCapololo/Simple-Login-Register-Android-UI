@@ -6,4 +6,73 @@
     android:layout_height="match_parent"
     tools:context=".InfoActivity">
 
+    <ImageView
+        android:id="@+id/imageViewCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_undraw_coffee_with_friends_3cbj"
+        android:scaleType="centerInside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:text="@string/info_page_title"
+        android:textColor="@color/button_bg"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageViewCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textViewSmall"
+        android:text="@string/info_text_subtitle"
+        android:gravity="center"
+        android:textSize="@dimen/activity_margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewInfo"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSkip"
+        android:layout_width="100dp"
+        android:layout_height="63dp"
+        android:layout_marginRight="20dp"
+        app:cornerRadius="10dp"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:backgroundTint="@color/button_bg"
+        android:padding="@dimen/activity_margin_small"
+        android:text="@string/button_skip"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@id/buttonNext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSmall"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonNext"
+        android:layout_width="100dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="20dp"
+        app:cornerRadius="10dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/button_bg"
+        android:padding="@dimen/activity_margin_small"
+        android:text="@string/button_next"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_baseline_arrow_forward_24"
+        app:iconGravity="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/buttonSkip"
+        app:layout_constraintTop_toBottomOf="@id/textViewSmall" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

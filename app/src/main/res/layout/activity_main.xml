@@ -182,7 +182,7 @@
             android:textAllCaps="false"
             android:padding="@dimen/activity_margin_small"
             app:icon="@drawable/ic_baseline_arrow_forward_24"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/button_bg"
             app:iconGravity="textEnd"
             android:text="@string/create_an_account"
             app:layout_constraintTop_toBottomOf="@+id/imageViewfacebookLogo"
