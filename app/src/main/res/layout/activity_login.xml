@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".LoginActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:layout_height="200dp"
             android:layout_marginTop="36dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_appreciation_ng5k"
+            android:src="@drawable/ic_undraw_showing_support_re_5f2v"
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -27,38 +27,13 @@
             android:layout_margin="16dp"
             android:textStyle="bold"
             android:textSize="24dp"
-            android:text="@string/become_a_member"
+            android:text="@string/welcome_back"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="32dp"
-            app:hintEnabled="true"
-            android:id="@+id/textInputName"
-            app:endIconTint="@color/black"
-            app:boxCornerRadiusBottomEnd="@dimen/input_corner_radius"
-            app:boxCornerRadiusBottomStart="@dimen/input_corner_radius"
-            app:boxCornerRadiusTopEnd="@dimen/input_corner_radius"
-            app:boxCornerRadiusTopStart="@dimen/input_corner_radius"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:layout_constraintTop_toBottomOf="@id/title"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:drawableEnd="@drawable/ic_baseline_person_outline_24"
-                android:hint="@string/name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -72,7 +47,7 @@
             app:boxCornerRadiusTopEnd="@dimen/input_corner_radius"
             app:boxCornerRadiusTopStart="@dimen/input_corner_radius"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:layout_constraintTop_toBottomOf="@id/textInputName"
+            app:layout_constraintTop_toBottomOf="@id/title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
@@ -85,6 +60,19 @@
             </com.google.android.material.textfield.TextInputEditText>
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_small"
+            android:text="@string/forgot_password"
+            app:layout_constraintBottom_toTopOf="@id/textInputPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textInputEmail"
+            app:layout_constraintVertical_bias="1.0" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -111,6 +99,25 @@
             </com.google.android.material.textfield.TextInputEditText>
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkboxRememberMe"
+            android:layout_marginTop="@dimen/activity_margin_small"
+            android:layout_marginLeft="@dimen/activity_margin_small"
+            app:layout_constraintTop_toBottomOf="@id/textInputPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/remember_me"
+            android:textSize="@dimen/activity_margin_small"
+            app:layout_constraintStart_toStartOf="@id/checkboxRememberMe"
+            app:layout_constraintTop_toBottomOf="@id/textInputPassword" />
 
         <TextView
             android:id="@+id/textViewOr"
@@ -184,7 +191,7 @@
             app:icon="@drawable/ic_baseline_arrow_forward_24"
             android:backgroundTint="@color/button_bg"
             app:iconGravity="textEnd"
-            android:text="@string/create_an_account"
+            android:text="@string/button_login"
             app:layout_constraintTop_toBottomOf="@+id/imageViewfacebookLogo"
             android:layout_marginTop="@dimen/activity_margin_large"
             android:layout_marginStart="@dimen/activity_margin_small"
@@ -193,7 +200,7 @@
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:text="@string/already_have_an_account_sign_in"
+            android:text="@string/don_t_have_a_account_sign_up_now"
             app:layout_constraintTop_toBottomOf="@+id/buttonCreateAccount"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -202,5 +209,6 @@
             android:layout_height="match_parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.core.widget.NestedScrollView>

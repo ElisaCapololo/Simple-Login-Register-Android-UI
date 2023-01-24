@@ -11,4 +11,9 @@
     <string name="info_text_subtitle">Sit back and never worry about sharing bill with your housemates again!</string>
     <string name="button_next">Next</string>
     <string name="button_skip">Skip</string>
+    <string name="button_login">Log in</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="don_t_have_a_account_sign_up_now">Don\'t have a account? Sign up now.</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="remember_me">Remember me</string>
 </resources>
