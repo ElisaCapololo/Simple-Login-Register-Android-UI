@@ -6,4 +6,9 @@
     <string name="password">Password</string>
     <string name="or">or</string>
     <string name="create_an_account">Create an account</string>
+    <string name="already_have_an_account_sign_in">Already have an account?Sign in</string>
+    <string name="info_page_title">One click away from splitting the bill</string>
+    <string name="info_text_subtitle">Sit back and never worry about sharing bill with your housemates again!</string>
+    <string name="button_next">Next</string>
+    <string name="button_skip">Skip</string>
 </resources>
