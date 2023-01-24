@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewOr"
+        android:text="@string/or"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/activity_margin_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        app:layout_constraintBottom_toBottomOf="@+id/textViewOr"
+        app:layout_constraintTop_toTopOf="@id/textViewOr"
+        app:layout_constraintEnd_toStartOf="@id/textViewOr"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="@dimen/activity_margin_small"
+        android:background="@color/input_bg"
+        android:layout_width="0dp"
+        android:layout_height="2dp"/>
+
+    <View
+        app:layout_constraintTop_toTopOf="@id/textViewOr"
+        app:layout_constraintStart_toEndOf="@id/textViewOr"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/activity_margin_small"
+        android:background="@color/input_bg"
+        android:layout_width="0dp"
+        android:layout_height="2dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewfacebookLogo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/register_icon_bg"
+        android:src="@drawable/ic_facebook"
+        android:layout_margin="@dimen/activity_margin_small"
+        app:layout_constraintTop_toBottomOf="@id/textViewOr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageViewGoogleLogo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/register_icon_bg"
+        android:src="@drawable/ic_google"
+        android:layout_margin="@dimen/activity_margin_small"
+        app:layout_constraintTop_toBottomOf="@id/textViewOr"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewfacebookLogo"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageViewAppleLogo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/register_icon_bg"
+        android:src="@drawable/ic_apple_logo"
+        android:layout_margin="@dimen/activity_margin_small"
+        app:layout_constraintTop_toBottomOf="@id/textViewOr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageViewfacebookLogo"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
