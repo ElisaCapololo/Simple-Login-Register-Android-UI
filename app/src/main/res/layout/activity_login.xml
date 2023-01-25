@@ -65,6 +65,7 @@
             android:id="@+id/forgot_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/button_bg"
             android:layout_marginTop="@dimen/activity_margin_small"
             android:text="@string/forgot_password"
             app:layout_constraintBottom_toTopOf="@id/textInputPassword"
@@ -104,6 +105,7 @@
             android:id="@+id/checkboxRememberMe"
             android:layout_marginTop="@dimen/activity_margin_small"
             android:text="@string/remember_me"
+            android:textColor="@color/button_bg"
             android:layout_marginLeft="@dimen/activity_margin_small"
             app:layout_constraintTop_toBottomOf="@id/textInputPassword"
             app:layout_constraintStart_toStartOf="parent"
@@ -144,22 +146,12 @@
             android:text="@string/don_t_have_a_account_sign_up_now"
             app:layout_constraintTop_toBottomOf="@+id/buttonCreateAccount"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/signup"
-            android:layout_marginTop="@dimen/activity_margin_small"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"/>
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:textColor="@color/primary_base"
-            android:id="@+id/signup"
-            android:text="@string/sign_up_now"
-            android:layout_marginLeft="50dp"
-            app:layout_constraintTop_toBottomOf="@+id/buttonCreateAccount"
-            app:layout_constraintStart_toStartOf="@+id/question"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="@dimen/activity_margin_small"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"/>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
