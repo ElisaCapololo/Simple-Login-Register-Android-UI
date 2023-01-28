@@ -144,6 +144,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/activity_margin_small"
+            android:layout_marginBottom="@dimen/activity_margin_small"
             android:text="@string/already_have_an_account_sign_in"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

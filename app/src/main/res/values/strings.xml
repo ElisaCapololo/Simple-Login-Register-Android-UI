@@ -13,7 +13,7 @@
     <string name="button_skip">Skip</string>
     <string name="button_login">Log in</string>
     <string name="welcome_back">Welcome back</string>
-    <string name="don_t_have_a_account_sign_up_now"><font fgcolor="#1E1D2E">Don\'t have a account?</font><font fgcolor="#023F9F"> Sign in</font></string>
+    <string name="don_t_have_a_account_sign_up_now"><font fgcolor="#1E1D2E">Don\'t have a account?</font><font fgcolor="#023F9F"> Sign up now</font></string>
     <string name="forgot_password">Forgot password?</string>
     <string name="remember_me">Remember me</string>
     <string name="sign_up_now">Sign up now</string>
