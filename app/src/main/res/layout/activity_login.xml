@@ -52,6 +52,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInoutEditEmail"
                 android:drawableEnd="@drawable/ic_baseline_email_24"
                 android:hint="@string/email"
                 android:layout_width="match_parent"
@@ -92,6 +93,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInoutEditPassword"
                 android:drawableEnd="@drawable/ic_baseline_remove_red_eye_24"
                 android:hint="@string/password"
                 android:layout_width="match_parent"

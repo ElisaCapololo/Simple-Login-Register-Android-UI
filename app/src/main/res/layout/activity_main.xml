@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="32dp"
             app:hintEnabled="true"
-            android:id="@+id/textInputEmail"
+            android:id="@+id/textEmail"
             app:endIconTint="@color/black"
             app:boxCornerRadiusBottomEnd="@dimen/input_corner_radius"
             app:boxCornerRadiusBottomStart="@dimen/input_corner_radius"
@@ -91,14 +91,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="32dp"
             app:hintEnabled="true"
-            android:id="@+id/textInputPassword"
+            android:id="@+id/textPassword"
             app:endIconTint="@color/black"
             app:boxCornerRadiusBottomEnd="@dimen/input_corner_radius"
             app:boxCornerRadiusBottomStart="@dimen/input_corner_radius"
             app:boxCornerRadiusTopEnd="@dimen/input_corner_radius"
             app:boxCornerRadiusTopStart="@dimen/input_corner_radius"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:layout_constraintTop_toBottomOf="@id/textInputEmail"
+            app:layout_constraintTop_toBottomOf="@id/textEmail"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
@@ -118,7 +118,7 @@
             android:layout_width="match_parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputPassword"
+            app:layout_constraintTop_toBottomOf="@+id/textPassword"
             layout="@layout/social_banner_layout"/>
 
         <com.google.android.material.button.MaterialButton
